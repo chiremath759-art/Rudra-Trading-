@@ -1,0 +1,244 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Rudra Trader Forex Learning</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+/* Layout: single centered mobile column. Logo, headline, CTA all above the fold, then pairs strip, 2x2 learning grid, repeat CTA, disclaimer. */
+:root {
+  --bg: #070504;
+  --bg-deep: #130b06;
+  --surface: #1a110b;
+  --surface-hi: #261810;
+  --line: rgba(255, 150, 70, 0.2);
+  --fg: #fff3e8;
+  --muted: #c4a78f;
+  --accent: #ff7a00;
+  --accent-hi: #ffa03a;
+  --glow: rgba(255,122,0, 0.45);
+  --font-display: "Sora", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Manrope", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0;
+  background:
+    radial-gradient(900px 520px at 50% -8%, rgba(255,122,0, 0.22), transparent 70%),
+    radial-gradient(600px 400px at 100% 60%, rgba(150,55,0, 0.14), transparent 70%),
+    linear-gradient(180deg, var(--bg-deep) 0%, var(--bg) 55%);
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  padding-block: 20px 28px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+.wrap { max-width: 520px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px; }
+
+/* Hero */
+.hero { position: relative; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; padding-top: 6px; }
+#candles {
+  position: absolute; inset: -20px -40px auto -40px; width: calc(100% + 80px); height: 380px;
+  opacity: 0.5; pointer-events: none; z-index: 0;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, rgba(0,0,0,0.5) 55%, transparent 100%);
+          mask-image: linear-gradient(180deg, #000 0%, rgba(0,0,0,0.5) 55%, transparent 100%);
+}
+.hero > *:not(#candles) { position: relative; z-index: 1; }
+
+.logo {
+  width: 104px; height: 104px; border-radius: 50%; display: block;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 0 38px var(--glow), 0 0 90px rgba(255,122,0,0.25);
+}
+.eyebrow {
+  margin: 4px 0 0; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent-hi); border: 1px solid var(--line); background: rgba(38, 24, 16, 0.7);
+  padding: 6px 12px; border-radius: 999px;
+}
+h1 {
+  margin: 0; font-family: var(--font-display); font-weight: 800; letter-spacing: -0.02em;
+  font-size: clamp(2.05rem, 9vw, 2.9rem); line-height: 1.08; text-wrap: balance;
+}
+.grad { background: linear-gradient(100deg, #ffd08a 0%, #ff9420 55%, #ff7a00 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lede { margin: 0; max-width: 34ch; color: var(--muted); font-size: 1.05rem; text-wrap: balance; }
+
+/* CTA */
+.cta {
+  position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  width: 100%; max-width: 420px; min-height: 60px; padding: 16px 22px; margin-top: 6px;
+  border-radius: 16px; text-decoration: none; color: #1b0d02;
+  font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; letter-spacing: 0.005em;
+  background: linear-gradient(135deg, #ffa03a 0%, #ff7a00 45%, #d65a00 100%);
+  box-shadow: 0 0 0 1px rgba(255, 215, 160, 0.45) inset, 0 10px 34px rgba(255,122,0, 0.5), 0 0 60px rgba(255,122,0, 0.28);
+  overflow: hidden; transition: transform 0.18s ease, box-shadow 0.18s ease; -webkit-tap-highlight-color: transparent;
+  animation: pulse 2.8s ease-in-out infinite;
+}
+.cta::after {
+  content: ""; position: absolute; top: 0; bottom: 0; left: -40%; width: 35%;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,0.35), transparent);
+  transform: skewX(-18deg); animation: sheen 3.6s ease-in-out infinite;
+}
+.cta:hover { transform: translateY(-2px); box-shadow: 0 0 0 1px rgba(255, 225, 185, 0.6) inset, 0 14px 40px rgba(255,122,0, 0.6), 0 0 70px rgba(255,122,0, 0.35); }
+.cta:active { transform: translateY(0) scale(0.985); }
+.cta:focus-visible { outline: 3px solid #ffd9a8; outline-offset: 3px; }
+.cta svg { width: 24px; height: 24px; flex: none; }
+.micro { margin: -4px 0 0; font-size: 0.8rem; color: var(--muted); }
+
+@keyframes pulse { 0%, 100% { box-shadow: 0 0 0 1px rgba(255, 215, 160, 0.45) inset, 0 10px 34px rgba(255,122,0,.5), 0 0 60px rgba(255,122,0,.28); } 50% { box-shadow: 0 0 0 1px rgba(255, 215, 160, 0.45) inset, 0 12px 42px rgba(255,122,0,.7), 0 0 84px rgba(255,122,0,.42); } }
+@keyframes sheen { 0%, 55% { left: -40%; } 100% { left: 140%; } }
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.hero > *:not(#candles), .block { animation: rise 0.7s cubic-bezier(.2,.7,.2,1) both; }
+.hero > :nth-child(3) { animation-delay: 0.05s; }
+.hero > :nth-child(4) { animation-delay: 0.12s; }
+.hero > :nth-child(5) { animation-delay: 0.19s; }
+.hero > :nth-child(6) { animation-delay: 0.26s; }
+.hero > :nth-child(7) { animation-delay: 0.32s; }
+.block { animation-delay: 0.2s; }
+
+/* Pairs strip */
+.pairs { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.label { margin: 0; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.chip {
+  font-family: var(--font-mono); font-size: 13px; color: var(--fg);
+  padding: 7px 12px; border-radius: 10px; border: 1px solid var(--line); background: rgba(26, 17, 11, 0.85);
+}
+
+/* Features */
+.features { display: flex; flex-direction: column; gap: 16px; }
+.features h2 { margin: 0; text-align: center; font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.feat {
+  min-width: 0; padding: 16px 14px 18px; border-radius: 16px; border: 1px solid var(--line);
+  background: linear-gradient(160deg, var(--surface-hi), var(--surface) 70%);
+  display: flex; flex-direction: column; gap: 10px;
+}
+.ico {
+  width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center;
+  background: rgba(255,122,0, 0.14); border: 1px solid rgba(255,162,58, 0.35); color: var(--accent-hi);
+  box-shadow: 0 0 22px rgba(255,122,0, 0.25);
+}
+.ico svg { width: 22px; height: 22px; }
+.feat h3 { margin: 0; font-family: var(--font-display); font-size: 0.95rem; font-weight: 600; line-height: 1.3; overflow-wrap: anywhere; }
+
+/* Platform logo */
+.platform { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 8px; }
+.platform img { width: 132px; height: auto; display: block; opacity: 0.95; }
+
+/* Disclaimer */
+.disclaimer { text-align: center; display: flex; flex-direction: column; gap: 8px; padding-top: 4px; }
+.disclaimer p { margin: 0; font-size: 0.82rem; color: var(--muted); }
+.disclaimer .risk { color: #e8d3c0; font-weight: 600; }
+.disclaimer .copy { font-size: 0.74rem; opacity: 0.7; }
+
+@media (min-width: 560px) { body { padding-block: 36px 40px; } .wrap { gap: 56px; } .logo { width: 116px; height: 116px; } }
+@media (prefers-reduced-motion: reduce) {
+  .cta, .cta::after, .hero > *:not(#candles), .block { animation: none !important; }
+  .cta { transition: none; }
+}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <canvas id="candles" aria-hidden="true"></canvas>
+    <img class="logo" src="logo.jpg" width="116" height="116" alt="Rudra Trader logo">
+    <p class="eyebrow">Forex trading education</p>
+    <h1>Learn Forex Trading <span class="grad">with Confidence</span></h1>
+    <p class="lede">Get Daily Market Insights, Trading Education, Technical Analysis &amp; Learning Resources.</p>
+    <a class="cta" href="https://t.me/+u3LGhK2hm5VhODk1" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 3.4a1.2 1.2 0 0 0-1.25-.2L2.9 9.9c-.9.35-.88 1.65.03 1.95l4.3 1.4 1.65 5.1c.25.75 1.2.95 1.75.4l2.4-2.35 4.5 3.3c.75.55 1.8.15 2-.76l3-14.4a1.2 1.2 0 0 0-.93-1.14ZM9.1 13.3l8.3-5.2-6.4 6.5-.25 2.6-1.65-3.9Z"/></svg>
+      <span>Join Our Telegram Community</span>
+    </a>
+    <p class="micro">Opens Telegram. Educational content only.</p>
+    <div class="platform">
+      <span class="label">Practice platform</span>
+      <img src="iq.png" width="468" height="101" alt="IQ Option">
+    </div>
+  </header>
+
+  <section class="pairs block" aria-label="Markets covered">
+    <p class="label">Charts we study</p>
+    <div class="chips">
+      <span class="chip">EUR/USD</span>
+      <span class="chip">GBP/USD</span>
+      <span class="chip">USD/JPY</span>
+      <span class="chip">XAU/USD</span>
+    </div>
+  </section>
+
+  <section class="features block" aria-labelledby="feat-title">
+    <h2 id="feat-title">What you get inside</h2>
+    <div class="grid">
+      <div class="feat">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 12 5l9.5 4.5L12 14 2.5 9.5Z"/><path d="M6.5 11.8v4.2c0 1.2 2.5 2.5 5.5 2.5s5.5-1.3 5.5-2.5v-4.2"/><path d="M21.5 9.5v5"/></svg></span>
+        <h3>Forex Trading Education</h3>
+      </div>
+      <div class="feat">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><path d="M5 16v-4"/><path d="M10 16V8"/><path d="M15 16v-6"/><path d="M20 16V5"/></svg></span>
+        <h3>Daily Market Analysis</h3>
+      </div>
+      <div class="feat">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v3M7 14v4"/><rect x="5" y="6" width="4" height="8" rx="1"/><path d="M17 6v4M17 17v3"/><rect x="15" y="10" width="4" height="7" rx="1"/></svg></span>
+        <h3>Technical Analysis &amp; Chart Learning</h3>
+      </div>
+      <div class="feat">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v15H5.5A1.5 1.5 0 0 0 4 20.5v-15Z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v15h5.5a1.5 1.5 0 0 1 1.5 1.5v-15Z"/></svg></span>
+        <h3>Beginner-Friendly Learning Resources</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer class="disclaimer">
+    <p class="risk">Trading involves risk. Educational content only. No guaranteed profits.</p>
+    <p class="copy">IQ Option is a trademark of its respective owner. &copy; 2026 Rudra Trader</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  try {
+    var c = document.getElementById("candles");
+    if (!c || !c.getContext) return;
+    var ctx = c.getContext("2d");
+    function draw() {
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      var w = c.clientWidth, h = c.clientHeight;
+      c.width = w * dpr; c.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, w, h);
+      var n = Math.max(18, Math.floor(w / 22)), step = w / n;
+      var seed = 7;
+      function rnd() { seed = (seed * 16807) % 2147483647; return seed / 2147483647; }
+      var price = h * 0.7, pts = [];
+      for (var i = 0; i < n; i++) {
+        var o = price, drift = -h * 0.006 + (rnd() - 0.5) * h * 0.09;
+        var cl = Math.max(h * 0.12, Math.min(h * 0.9, o + drift));
+        var hi = Math.min(o, cl) - rnd() * h * 0.045, lo = Math.max(o, cl) + rnd() * h * 0.045;
+        pts.push({ o: o, c: cl, h: hi, l: lo });
+        price = cl;
+      }
+      ctx.shadowColor = "rgba(255,122,0,0.7)"; ctx.shadowBlur = 10;
+      pts.forEach(function (p, i) {
+        var x = i * step + step / 2, up = p.c <= p.o;
+        var col = up ? "rgba(255,162,58,0.95)" : "rgba(220,38,38,0.6)";
+        ctx.strokeStyle = col; ctx.fillStyle = col; ctx.lineWidth = 1.4;
+        ctx.beginPath(); ctx.moveTo(x, p.h); ctx.lineTo(x, p.l); ctx.stroke();
+        var bw = Math.max(4, step * 0.45), top = Math.min(p.o, p.c), bh = Math.max(2, Math.abs(p.o - p.c));
+        ctx.fillRect(x - bw / 2, top, bw, bh);
+      });
+    }
+    draw();
+    var t; window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(draw, 150); });
+  } catch (e) {}
+})();
+</script>
+
+</body></html>
